@@ -1,0 +1,87 @@
+.App{
+  
+   height: 99%;
+   width: 95%;
+ margin: auto;
+   border-radius: 12px;
+   min-height: 10px;
+   background-color: rgba(243, 234, 234, 0.4);
+   border:1px solid honeydew;
+
+   /* border-style: inset; */
+margin: auto;
+   position: relative;
+}
+
+.header{
+   height:15%;
+   position: relative;
+  
+        background: url("./images/Cover.jpeg") no-repeat;
+}
+.title{
+width: 91%;
+height: 10%;
+/* background-color: blanchedalmond; */
+margin: auto;
+font-size: 40px;
+font-weight: bold;
+color:rgba(89, 236, 4, 0.596);
+
+}
+.title div{
+   position: relative;
+   left: 7%;
+}
+.ody{
+    float: left;
+   height: 100%;
+   position: relative;
+ margin: auto;
+ background-color: rgba(29, 29, 221, 0.01);
+}
+
+label{
+   width:90%;
+
+  color: pink;
+  font-size: 15px;
+}
+
+.body{
+   text-align: center;
+      position: relative;
+   top: 10%;
+   color: wheat;
+}
+.body th{
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+   height:25%;
+   position: relative;
+  
+        background: url("./images/Cover.jpeg") no-repeat;
+}
+.ody{
+    float: left;
+  height:75%;
+   position: relative;
+ margin: auto;
+ background-color: rgba(29, 29, 221, 0.01);
+}
+.header{
+   height:25%;
+   position: relative;
+  
+        background: url("./images/Cover.jpeg") no-repeat;
+}
+
+th,td{
+   font-size: 15px;
+}
+ 
+
+}

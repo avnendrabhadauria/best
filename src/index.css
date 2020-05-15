@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   height: 100vh;
+    width: 100%;
+   
+background-color: black;
+    padding: 0px;
+    font-size:1vw;
+}
+
+#root{
+   height: 100%;
+    width: 100%;
+     padding: 0px;
+     margin: 0px;
+     background-color:black;
+        
+        background: url("./images/Cover.jpeg");
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
