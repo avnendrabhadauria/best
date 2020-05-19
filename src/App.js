@@ -19,7 +19,7 @@ export default class App extends Component {
         if (prevstate.filterState !== this.state.filterState) {
             this.setState({
                 Districts: Object.keys(this.state.data[this.state.filterState].districtData),
-                FilterDistricts: 'Chhose District'
+                FilterDistricts: 'Choose District'
             })
         }
 
@@ -42,7 +42,7 @@ export default class App extends Component {
         this.setState({ [e.target.name]: e.target.value })
     }
     render() {
-        let stateoption = [<option selected disabled hidden>Chhose States</option>]
+        let stateoption = [<option selected disabled hidden>Choose States</option>]
         if (this.state.states.length > 0) {
             this.state.states.forEach((d, i) => {
                 stateoption.push(<option name='filterState' key={d + i}>{d}</option>)
@@ -50,7 +50,7 @@ export default class App extends Component {
 
         }
 
-        let districtoption = [<option selected disabled hidden>Chhose District</option>]
+        let districtoption = [<option selected disabled hidden>Choose District</option>]
         if (this.state.Districts.length > 0) {
             debugger
             this.state.Districts.forEach((d, i) => {
