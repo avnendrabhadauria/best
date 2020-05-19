@@ -10,8 +10,8 @@ export default class App extends Component {
             data: {},
             Districts: [],
             FilterData: {},
-            filterState: 'Chhose States',
-            FilterDistricts: 'Chhose District',
+            filterState: 'Choose States',
+            FilterDistricts: 'Choose District',
             row: {}
         }
     }
@@ -60,8 +60,8 @@ export default class App extends Component {
         }
         let tr = ''
         if (this.state.FilterDistricts !== '' && this.state.filterState !== ''
-            && this.state.FilterDistricts !== 'Chhose District' &&
-            this.state.filterState !== 'Chhose States' && this.state.data[this.state.filterState].districtData[this.state.FilterDistricts]
+            && this.state.FilterDistricts !== 'Choose District' &&
+            this.state.filterState !== 'Choose States' && this.state.data[this.state.filterState].districtData[this.state.FilterDistricts]
             && this.state.data[this.state.filterState].districtData[this.state.FilterDistricts]
         ) {
             debugger
