@@ -32,7 +32,7 @@ export default class App extends Component {
             this.setState({
                 states: Object.keys(d), data: d
             })
-            console.log("data", d)
+
         }).catch(err => {
             console.log("err", err)
         })
