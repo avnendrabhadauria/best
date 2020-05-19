@@ -80,7 +80,7 @@ export default class App extends Component {
 
         return (<div className='App' >
             <div className='title'>
-                <div>Coronaa</div>
+                <div>COVID-19</div>
             </div>
             <div className='header '>
                 <div style={{ height: "99%" }}>
