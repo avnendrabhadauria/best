@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./temp.css"
 import { BackGroundimg } from "./Component/images"
+import Graph from './chart/chart'
 export default class App extends Component {
 
     constructor(props) {
@@ -12,7 +13,8 @@ export default class App extends Component {
             FilterData: {},
             filterState: 'Choose States',
             FilterDistricts: 'Choose District',
-            row: {}
+            row: {},
+            display: false
         }
     }
     componentDidUpdate(prevprops, prevstate) {
@@ -38,8 +40,16 @@ export default class App extends Component {
         })
     }
     Change = (e) => {
-        console.log("eee", e.target.value)
-        this.setState({ [e.target.name]: e.target.value })
+        console.log("eee", e.target.name)
+        let obj = { [e.target.name]: e.target.value }
+        if (e.target.name === 'FilterDistricts') {
+            obj["display"] = true;
+
+        }
+        else {
+            obj["display"] = false;
+        }
+        this.setState(obj)
     }
     render() {
         let stateoption = [<option selected disabled hidden>Choose States</option>]
@@ -52,7 +62,7 @@ export default class App extends Component {
 
         let districtoption = [<option selected disabled hidden>Choose District</option>]
         if (this.state.Districts.length > 0) {
-            debugger
+
             this.state.Districts.forEach((d, i) => {
                 districtoption.push(<option name='FilterDistricts' key={d + i}>{d}</option>)
             })
@@ -64,7 +74,7 @@ export default class App extends Component {
             this.state.filterState !== 'Choose States' && this.state.data[this.state.filterState].districtData[this.state.FilterDistricts]
             && this.state.data[this.state.filterState].districtData[this.state.FilterDistricts]
         ) {
-            debugger
+
             tr = <tr>
 
                 <td>{this.state.filterState}</td>
@@ -131,6 +141,16 @@ export default class App extends Component {
                         {tr}
                     </tbody>
                 </table>
+
+            </div>
+            <div className='graph' >
+                {this.state.display ? <Graph FilterDistricts={this.state.FilterDistricts} data={{
+                    confirmed: this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].confirmed,
+                    active: this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].active,
+                    recovered: this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].recovered,
+                    decresed: this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].deceased
+                }} /> : ''}
+                {/* <Graph FilterDistricts={'a'}  /> */}
             </div>
 
         </div>)
