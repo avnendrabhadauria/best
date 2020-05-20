@@ -51,13 +51,21 @@ label{
 .body{
    text-align: center;
       position: relative;
-   top: 10%;
+   top: 3%;
    color: wheat;
 }
 .body th{
     color: black;
 }
 
+.graph{
+   margin: auto;
+   position: relative;
+   margin-top: 5%;
+   width: 100%;
+   height: 50%;
+
+}
 @media screen and (max-width: 600px) {
   .header{
    height:25%;
@@ -82,6 +90,21 @@ label{
 th,td{
    font-size: 15px;
 }
- 
+ option{
+    min-width: 10px;
+    width: 11px;
+ }
+
+.graph{
+   margin: auto;
+   position: relative;
+   margin-top: 5%;
+   width: 100%;
+   height: 45%;
 
 }
+
+}
+
+
+
