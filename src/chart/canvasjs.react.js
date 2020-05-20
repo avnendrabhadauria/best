@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 // import React from 'react';
 // import { CanvasJS } from './canvasjs.min';
 var React = require('react');
 var CanvasJS = require('./canvasjs.min');
 
 
+=======
+import React from 'react';
+import CanvasJS from './canvasjs.min.js';
+>>>>>>> parent of 6ce6294... chnages
 
 class CanvasJSChart extends React.Component {
 	static _cjsContainerId = 0
