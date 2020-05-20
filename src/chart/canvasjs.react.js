@@ -1,5 +1,9 @@
-import React from 'react';
-import { CanvasJS } from './canvasjs.min.js';
+// import React from 'react';
+// import { CanvasJS } from './canvasjs.min';
+var React = require('react');
+var CanvasJS = require('./canvasjs.min');
+
+
 
 class CanvasJSChart extends React.Component {
 	static _cjsContainerId = 0
@@ -42,7 +46,7 @@ class CanvasJSChart extends React.Component {
 
 let CanvasJSReact = {
 	CanvasJSChart: CanvasJSChart,
-	Canvas: CanvasJS
+	CanvasJS: CanvasJS
 };
 
-export default CanvasJSChart;
+export default CanvasJSReact;

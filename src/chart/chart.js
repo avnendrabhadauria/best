@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import CanvasJSChart from './canvasjs.react';
-import CanvasJS from './canvasjs.min.js';
+import CanvasJSReact from './canvasjs.react';
+// import { CanvasJS } from './canvasjs.min.js';
 
 
 
@@ -35,7 +35,7 @@ class Chart extends Component {
         }
         return (
             <div>
-                <CanvasJSChart options={options}
+                <CanvasJSReact.CanvasJSChart options={options}
                 /* onRef={ref => this.chart = ref} */
                 />
                 {/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
@@ -50,7 +50,7 @@ class Chart extends Component {
         //     order = suffixes.length - 1;
         // var suffix = suffixes[order];
 
-        let t = CanvasJS.formatNumber(e.value * 0);
+        let t = CanvasJSReact.CanvasJS.formatNumber(e.value * 0);
         debugger
         return "-";
     }
