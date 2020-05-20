@@ -19,7 +19,7 @@ class Chart extends Component {
                 reversed: true,
             },
             axisY: {
-                title: "Count",
+                title: ">-------Count------->",
                 labelFormatter: this.addSymbols
             },
             data: [{
@@ -50,9 +50,9 @@ class Chart extends Component {
         //     order = suffixes.length - 1;
         // var suffix = suffixes[order];
 
-        let t = CanvasJS.formatNumber(e.value / Math.pow(100000, order));
+        let t = CanvasJS.formatNumber(e.value * 0);
         debugger
-        return t;
+        return "-";
     }
 }
 export default Chart;      
