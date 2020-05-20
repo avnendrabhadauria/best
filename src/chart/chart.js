@@ -19,7 +19,7 @@ class Chart extends Component {
                 reversed: true,
             },
             axisY: {
-                title: ">-------Count------->",
+                title: "Count",
                 labelFormatter: this.addSymbols
             },
             data: [{
@@ -50,9 +50,13 @@ class Chart extends Component {
         //     order = suffixes.length - 1;
         // var suffix = suffixes[order];
 
+<<<<<<< HEAD
         let t = CanvasJSReact.CanvasJS.formatNumber(e.value * 0);
+=======
+        let t = CanvasJS.formatNumber(e.value / Math.pow(100000, order));
+>>>>>>> parent of 5611483... chnages
         debugger
-        return "-";
+        return t;
     }
 }
 export default Chart;      
