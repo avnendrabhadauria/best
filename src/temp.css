@@ -61,10 +61,13 @@ label{
 .graph{
    margin: auto;
    position: relative;
-   margin-top: 5%;
+   margin-top: 1%;
    width: 100%;
-   height: 63%;
+   height: 59%;
 
+}
+canvas{
+   height: 30%;
 }
 @media screen and (max-width: 600px) {
   .header{

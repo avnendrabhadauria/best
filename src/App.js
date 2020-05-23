@@ -85,7 +85,32 @@ export default class App extends Component {
                 <td>{this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].deceased}</td>
             </tr>
         }
+        let data = ''
+        if (this.state.display) {
+            data = {
+                labels: ['Total', 'Recovered', 'Active',
+                    'Death'],
+                datasets: [
+                    {
+                        label: "Cases",
+                        fontColor: "white",
+                        backgroundColor: [
+                            'rgba(75,192,102,1)',
+                            'rgba(75,192,12,1)',
+                            'rgba(253,123,123,1)',
+                            'rgba(247,12,12,1)'
+                        ],
+                        borderColor: 'rgba(0,0,0,1)',
+                        borderWidth: 2,
+                        data: [this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].confirmed,
+                        this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].active,
+                        this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].recovered,
+                        this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].deceased, 100]
+                    }
+                ]
+            }
 
+        }
 
 
         return (<div className='App' >
@@ -144,7 +169,7 @@ export default class App extends Component {
 
             </div>
             <div className='graph' >
-                {this.state.display ? <Graph /> : ''
+                {this.state.display ? <Graph state={data} district={this.state.FilterDistricts} /> : ''
                 }
                 {/* <Graph FilterDistricts={'a'}  /> */}
             </div>
