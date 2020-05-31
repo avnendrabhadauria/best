@@ -5,7 +5,7 @@
  margin: auto;
    border-radius: 12px;
    min-height: 10px;
-   background-color: rgba(243, 234, 234, 0.4);
+   background-color: rgba(243, 234, 234, 0.2);
    border:1px solid honeydew;
 
    /* border-style: inset; */
@@ -55,7 +55,7 @@ label{
    color:rgb(255,255,255);
 }
 .body th{
-    color: black;
+    color: rgb(208, 233, 243);
 }
 
 .graph{
