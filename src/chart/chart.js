@@ -6,7 +6,7 @@ export default function Chart(props) {
 
 
     return (
-        <div style={{ "lineHeight": 0 }}>
+        <div style={{ "height": "90%" }}>
             <Bar
                 data={props.state}
                 options={{
