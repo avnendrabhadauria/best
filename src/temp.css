@@ -1,6 +1,6 @@
 .App{
   
-   height: 98%;
+   height: 99%;
    width: 99%;
  margin: auto;
    border-radius: 12px;
@@ -34,7 +34,7 @@ color:rgba(89, 236, 4, 0.596);
 .title div{
    position: relative;
    left: 4%;
-   width: 50%;
+   width: 53%;
 }
 .ody{
     float: left;
@@ -54,7 +54,7 @@ label{
 .body{
    text-align: center;
       position: relative;
-   top: 3%;
+   top: 2%;
    color:rgb(34, 14, 14);
 }
 .body th{
@@ -104,7 +104,7 @@ th,td{
 .graph{
    margin: auto;
    position: relative;
-   margin-top: 7%;
+   margin-top: 2%;
    width: 100%;
    height: 45%;
 
