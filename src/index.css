@@ -19,8 +19,8 @@ background-color: black;
      padding: 0px;
      margin: 0px;
      background-color:black;
-        
-        background: url("./images/Cover.jpeg");
+        background: url("./assets/images/img2.jpg");
+        /* background: url("./images/bk.jpeg"); */
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

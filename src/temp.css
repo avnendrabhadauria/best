@@ -17,7 +17,7 @@ margin: auto;
    height:15%;
    position: relative;
   
-        background: url("./images/Cover.jpeg") no-repeat;
+        /* background: url("./images/Cover.jpeg") no-repeat; */
 }
 .title{
 width: 91%;
@@ -44,15 +44,15 @@ color:rgba(89, 236, 4, 0.596);
 label{
    width:90%;
 
-  color: pink;
-  font-size: 15px;
+  color:  rgb(141, 236, 77);
+  font-size: 20px;
 }
 
 .body{
    text-align: center;
       position: relative;
    top: 3%;
-   color: wheat;
+   color:rgb(255,255,255);
 }
 .body th{
     color: black;
@@ -74,7 +74,7 @@ canvas{
    height:25%;
    position: relative;
   
-        background: url("./images/Cover.jpeg") no-repeat;
+        /* background: url("./images/Cover.jpeg") no-repeat; */
 }
 .ody{
     float: left;
@@ -87,7 +87,7 @@ canvas{
    height:25%;
    position: relative;
   
-        background: url("./images/Cover.jpeg") no-repeat;
+        /* background: url("./images/Cover.jpeg") no-repeat; */
 }
 
 th,td{
