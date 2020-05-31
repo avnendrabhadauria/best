@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./temp.css"
 import { BackGroundimg } from "./Component/images"
 import Graph from "./chart/chart"
+import Loader from "./Loader/Loader"
 export default class App extends Component {
 
     constructor(props) {
@@ -14,7 +15,8 @@ export default class App extends Component {
             filterState: 'Choose States',
             FilterDistricts: 'Choose District',
             row: {},
-            display: false
+            display: false,
+            load: true
         }
     }
     componentDidUpdate(prevprops, prevstate) {
@@ -32,7 +34,7 @@ export default class App extends Component {
             return res.json();
         }).then(d => {
             this.setState({
-                states: Object.keys(d), data: d
+                states: Object.keys(d), data: d, load: false
             })
 
         }).catch(err => {
@@ -169,6 +171,7 @@ export default class App extends Component {
                 </table>
 
             </div>
+            <Loader load={this.state.load} />
             <div className='graph' >
                 {this.state.display ? <Graph state={data} district={this.state.FilterDistricts} /> : ''
                 }
