@@ -6,10 +6,12 @@ export default function Chart(props) {
 
 
     return (
-        <div>
+        <div style={{ "lineHeight": 0 }}>
             <Bar
                 data={props.state}
                 options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
                     title: {
                         display: true,
                         text: `Covid-19 cases in ${props.district} district`,
@@ -46,7 +48,7 @@ export default function Chart(props) {
                         ]
                     }
                 }}
-                height={"200"}
+
 
 
             />

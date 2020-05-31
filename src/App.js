@@ -102,11 +102,11 @@ export default class App extends Component {
                         ],
                         borderColor: 'rgba(0,0,0,1)',
                         borderWidth: 2,
-                        data: [this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].confirmed,
-                        this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].recovered,
-                        this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].active,
+                        data: [+this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].confirmed,
+                        +this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].recovered,
+                        +this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].active,
 
-                        this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].deceased, 100]
+                        +this.state.data[this.state.filterState].districtData[this.state.FilterDistricts].deceased]
                     }
                 ]
             }
