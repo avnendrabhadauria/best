@@ -38,7 +38,8 @@ export default class App extends Component {
             })
 
         }).catch(err => {
-            console.log("err", err)
+            console.log("err", err);
+
         })
     }
     Change = (e) => {
