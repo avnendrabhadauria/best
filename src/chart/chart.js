@@ -16,7 +16,7 @@ export default function Chart(props) {
                         display: true,
                         text: `Covid-19 cases in ${props.district} district`,
                         fontSize: 20,
-                        fontColor: "#FFFF66"
+                        fontColor: "black"
                     },
                     legend: {
                         display: false,
@@ -30,7 +30,7 @@ export default function Chart(props) {
                                         return label;
                                     },
                                     fontSize: 12,
-                                    fontColor: '#F7FF87'
+                                    fontColor: 'black'
                                 }
                             }
                         ],
@@ -41,7 +41,7 @@ export default function Chart(props) {
                                         return label;
                                     },
                                     fontSize: 14,
-                                    fontColor: '#F7FF87'
+                                    fontColor: 'black'
                                 },
                                 display: true,
                             }

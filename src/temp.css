@@ -1,12 +1,12 @@
 .App{
   
    height: 98%;
-   width: 95%;
+   width: 99%;
  margin: auto;
    border-radius: 12px;
    min-height: 10px;
    background-color: rgba(243, 234, 234, 0.2);
-   border:1px solid honeydew;
+   border:2px solid rgba(89, 236, 4, 0.596);;
 
    /* border-style: inset; */
 margin: auto;
@@ -16,13 +16,15 @@ margin: auto;
 .header{
    height:15%;
    position: relative;
+    background-color: black;
   
         /* background: url("./images/Cover.jpeg") no-repeat; */
 }
 .title{
-width: 91%;
-height: 7%;
-/* background-color: blanchedalmond; */
+width: 100%;
+height: 8%;
+border-radius: 10px 10px 0px 0px;
+ background-color: black;
 margin: auto;
 font-size: 40px;
 font-weight: bold;
@@ -31,7 +33,8 @@ color:rgba(89, 236, 4, 0.596);
 }
 .title div{
    position: relative;
-   left: 7%;
+   left: 4%;
+   width: 50%;
 }
 .ody{
     float: left;
@@ -52,10 +55,10 @@ label{
    text-align: center;
       position: relative;
    top: 3%;
-   color:rgb(255,255,255);
+   color:rgb(34, 14, 14);
 }
 .body th{
-    color: rgb(208, 233, 243);
+    color: rgb(34, 14, 14);
 }
 
 .graph{
