@@ -177,8 +177,9 @@ export default class App extends Component {
                 {this.state.display ? <Graph state={data} district={this.state.FilterDistricts} /> : ''
                 }
                 {/* <Graph FilterDistricts={'a'}  /> */}
-            </div>
 
+            </div>
+            <center><div>  &copy; By Avnendra Bhadauria</div></center>
         </div>)
     }
 }
