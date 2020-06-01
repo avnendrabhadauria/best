@@ -119,7 +119,7 @@ export default class App extends Component {
 
         return (<div className='App' >
             <div className='title'>
-                <div>COVID-19</div>
+                <div><marquee>COVID-19</marquee></div>
             </div>
             <div className='header '>
                 <div style={{ height: "99%" }}>
