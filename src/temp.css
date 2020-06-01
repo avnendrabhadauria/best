@@ -1,6 +1,6 @@
 .App{
   
-   height: 99%;
+   height: 100%;
    width: 99%;
  margin: auto;
    border-radius: 12px;
@@ -79,9 +79,13 @@ canvas{
   
         /* background: url("./images/Cover.jpeg") no-repeat; */
 }
+label{
+   font-size: 15px;
+
+}
 .ody{
     float: left;
-  height:75%;
+  height:73%;
    position: relative;
  margin: auto;
  background-color: rgba(29, 29, 221, 0.01);
@@ -109,6 +113,17 @@ th,td{
    height: 45%;
 
 }
+.title{
+ width: 100%;
+height: 8%;
+border-radius: 10px 10px 0px 0px;
+ background-color: black;
+margin: auto;
+font-size: 35px;
+font-weight: bold;
+color:rgba(89, 236, 4, 0.596);
+}
+
 
 }
 
